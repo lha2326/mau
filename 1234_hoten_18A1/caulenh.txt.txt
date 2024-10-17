@@ -1,0 +1,157 @@
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git add new_folder
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git commit -m "Them folder"
+[main c47201d] Them folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file1.txt
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 333 bytes | 333.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/lhaaaaa/1234_hoten_baitap.git
+   f953f44..c47201d  main -> main
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_1)
+$ git checkout -b nhanh_4
+Switched to a new branch 'nhanh_4'
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ ls
+README.md  file_nhanh1.txt
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ echo "Sua file" > file_nhanh1.txt
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ git commit -m "Sua doi file"
+[nhanh_4 578ff9c] Sua doi file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/lhaaaaa/1234_hoten_baitap/pull/new/nhanh_4
+remote:
+To https://github.com/lhaaaaa/1234_hoten_baitap.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was 578ff9c).
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was f042e49).
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was a89966f).
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git add .
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git push origin
+To https://github.com/lhaaaaa/1234_hoten_baitap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/lhaaaaa/1234_hoten_baitap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git fetch
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 3.65 KiB | 196.00 KiB/s, done.
+From https://github.com/lhaaaaa/1234_hoten_baitap
+   c47201d..1920c21  main       -> origin/main
+   f042e49..232aa8b  nhanh_1    -> origin/nhanh_1
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git pull
+Updating c47201d..1920c21
+Fast-forward
+ file_nhanh1.txt | 1 +
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git push origin
+Everything up-to-date
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git branch -l
+* main
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git add .
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
+$ git push origin
+Everything up-to-date
+
+ADMIN@DESKTOP-2M0CU9Q MINGW64 ~/OneDrive/Documents/Downloads/Tin học cơ sở/K18/18A1/1234_hoten_baitap (main)
